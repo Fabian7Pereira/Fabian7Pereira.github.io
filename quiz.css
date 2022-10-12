@@ -1,0 +1,631 @@
+* {
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+/*    counter-reset: count;*/
+}
+
+.quiz-container {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.quiz-header {
+    padding: 10px;
+}
+
+#questionNumber {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#question {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.dykText {
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    margin: 15px 0px 0px;
+    width: 200px;
+    left: 10%;
+    background-color: transparent;
+}
+
+.dykText:first-child {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px 0px;
+    background-color: transparent;
+}
+
+.dyk {
+    background-image: url(Images/QuizBanner2.png);
+    height: 200px;
+    max-width: 1000px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 1px #000000;
+}
+
+.answers{
+    text-align: center;
+    background-color: #f9f9f9;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container {
+    display: inline-block;
+    width: 40%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container span {
+    display: inline-block;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 100;
+}
+
+.checkbox {
+    visibility: hidden;
+    display: none;
+}
+
+#error {
+    background-color: #f9f9f9;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.submit {
+    text-align: center;
+    background-color: #107c84;
+    color: #ffffff;
+    border-radius: 10px;
+    border-style: none;
+}
+
+/*
+.submit:focus {
+    counter-increment: count;
+}
+*/
+
+.checkbox span {
+    background-color: #ffffff;
+}
+
+.checkbox:checked + span{
+    background-color: #107c84;
+    border: solid 1px #000000;
+    color: #ffffff;
+}
+
+/*
+.checkbox:hover + span {
+    background-color: #107c84;
+}
+*/
+
+.header {
+    padding: 10px;
+}
+
+#feature {
+    font-size: 15px;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+}
+
+.column {
+    background-color: #f9f9f9;
+}
+
+.right h2 {
+    background-color: #f9f9f9;
+    font-weight: 400;
+}
+
+.right h3 {
+    background-color: #f9f9f9;
+    font-weight: normal;
+}
+
+.topFeatures {
+    background-color: #f9f9f9;
+}
+
+.topFeatures p {
+    background-color: #f9f9f9;
+    font-weight: lighter;
+}
+
+#inspire2 {
+    background-image: url(Images/inspire2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#charge4 {
+    background-image: url(Images/charge4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#luxe {
+    background-image: url(Images/luxe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#versa2 {
+    background-image: url(Images/versa2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#charge5 {
+    background-image: url(Images/charge5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#versa3 {
+    background-image: url(Images/versa3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#sense {
+    background-image: url(Images/sense.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.btnShopNow {
+    text-align: center;
+    background-color: #107c84;
+    color: #ffffff;
+    border-radius: 10px;
+    border-style: none;
+}
+
+@media only screen and (max-width: 1920px) {
+    .container {
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+    
+    .container span {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    
+    .answers {
+        padding: 20px 0px;
+        margin-bottom: 20px;
+    }
+    
+    .submit {
+        width: 30%;
+        padding: 10px 0px;
+        font-size: 20px
+    }
+    
+    .header h1 {
+        font-size: 35px;
+        padding: 0px 50px;
+    }
+    
+    .row {
+        height: 300px;
+        margin-bottom: 10px;
+        padding: 0px 15%;
+        width: 100%;
+    }
+    
+    .left {
+        height: 300px;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .right {
+        height: 300px;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .right h2 {
+        font-size: 30px;
+    }
+    
+    .right h3 {
+        font-size: 20px;
+    }
+    
+    .topFeatures {
+        font-size: 15px;
+    }
+        
+    .btnShopNow {
+        width: 40%;
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .container {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+    
+    .container span {
+        padding: 15px 20px;
+    }
+    
+    .answers {
+        padding: 20px 0px;
+        margin-bottom: 20px;
+    }
+    
+    .submit {
+        width: 30%;
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+    
+    .header h1 {
+        font-size: 30px;
+        padding: 0px 50px;
+    }
+    
+    .row {
+        height: 300px;
+        margin-bottom: 10px;
+        padding: 0px 10%;
+        width: 100%;
+    }
+    
+    .left {
+        height: 300px;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .right {
+        height: 300px;
+        width: 50%;
+        display: inline-block;
+    }
+    
+    .right h2 {
+        font-size: 25px;
+    }
+    
+    .right h3 {
+        font-size: 20px;
+    }
+    
+    .topFeatures {
+        font-size: 15px;
+    }
+        
+    .btnShopNow {
+        width: 40%;
+        padding: 10px 0px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    
+    #questionNumber {
+        font-size: 13px;
+    }
+
+    #question {
+        font-size: 23px;
+    }
+
+    .dykText {
+        left: 5%;
+    }
+    
+    .dyk {
+        background-image: url(Images/QuizBanner2tablet.png);
+    }
+    
+    .container {
+        width: 45%;
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    
+    .container span {
+        padding: 20px 0px;
+    }
+    
+    .answers {
+        padding: 20px 0px;
+    }
+    
+    .submit {
+        width: 30%;
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    
+    .header h1 {
+        font-size: 30px;
+        padding: 0px 50px;
+    }
+    
+    .row {
+        height: 500px;
+        margin-bottom: 10px;
+        padding: 0px 10%;
+        display: block;
+    }
+    
+    .left {
+        height: 250px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .right {
+        height: 250px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    
+    .right h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+    
+    .right h3 {
+        font-size: 20px;
+        padding: 0px;
+        margin: 10px 0px
+    }
+    
+    .topFeatures {
+        font-size: 15px;
+        padding: 0px;
+        margin: 5px;
+    }
+        
+    .btnShopNow {
+        width: 40%;
+        padding: 10px 0px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    
+    #questionNumber {
+        font-size: 12px;
+    }
+
+    #question {
+        font-size: 21px;
+    }
+    
+    .dykText {
+        font-size: 14px;
+        font-weight: 100;
+        position: relative;
+        margin: 5px 0px 0px;
+        max-width: 200px;
+        background-color: transparent;
+    }
+
+    .dykText:first-child {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 5px 0px 0px;
+        background-color: transparent;
+    }
+
+    .dyk {
+        background-image: url(Images/QuizBannerMobile.png);
+        height: 100px;
+        width: 80%;
+/*        Why does this work but normal text-align: center doesnt*/
+        text-align: -webkit-center;     
+        color: #ffffff;
+        text-shadow: #000000 0px 0px 2px;
+        margin: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: solid 1px #000000;
+    }
+    .container {
+        width: 70%;
+        padding: 3px 0px;
+        font-size: 15px;
+    }
+    
+    .container span {
+        padding: 10px 0px;
+    }
+    
+    .answers {
+        padding: 20px 0px;
+    }
+    
+    .submit {
+        width: 30%;
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    
+    .header h1 {
+        font-size: 20px;
+        padding: 0px 50px;
+    }
+    
+    .row {
+        height: 400px;
+        margin-bottom: 10px;
+        padding: 0px 10%;
+        display: block;
+    }
+    
+    .left {
+        height: 200px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .right {
+        height: 200px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    
+    .right h2 {
+        font-size: 20px;
+        margin: 0;
+        font-weight: 700;
+    }
+    
+    .right h3 {
+        font-size: 15px;
+        padding: 0px;
+        margin: 10px 0px;
+        font-weight: 500;
+    }
+    
+    .topFeatures {
+        font-size: 13px;
+        padding: 0px;
+        margin: 5px;
+        font-weight: 100;
+    }
+        
+    .btnShopNow {
+        width: 40%;
+        padding: 10px 0px;
+        font-size: 13px;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #questionNumber {
+        font-size: 10px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+    
+    .container {
+        width: 80%;
+        padding: 3px 0px;
+        font-size: 15px;
+    }
+    
+    .container span {
+        padding: 10px 0px;
+    }
+    
+    .answers {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .submit {
+        width: 30%;
+        padding: 10px 0px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .header h1 {
+        font-size: 20px;
+        padding: 0px 50px;
+    }
+    
+    .row {
+        height: 400px;
+        margin-bottom: 10px;
+        padding: 0px 10%;
+        display: block;
+    }
+    
+    .left {
+        height: 200px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .right {
+        height: 200px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    
+    .right h2 {
+        font-size: 20px;
+        margin: 0;
+        font-weight: 700;
+    }
+    
+    .right h3 {
+        font-size: 15px;
+        padding: 0px;
+        margin: 10px 0px;
+        font-weight: 500;
+    }
+    
+    .topFeatures {
+        font-size: 13px;
+        padding: 0px;
+        margin: 5px;
+        font-weight: 100;
+    }
+        
+    .btnShopNow {
+        width: 40%;
+        padding: 10px 0px;
+        font-size: 13px;
+        margin-top: 0px;
+    }
+    
+}
