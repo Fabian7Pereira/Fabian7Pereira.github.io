@@ -173,11 +173,11 @@ function loadQuiz() {
         con11.style.display = 'none';
         con12.style.display = 'none';
     } else if(currentQuiz == 3){
-        a1.style.backgroundImage = 'url("images/smartwatch-icon.png")';
+        a1.style.backgroundImage = 'url("Images/smartwatch-icon.png")';
         a1.style.height = '200px';
         a1.style.verticalAlign = 'middle';
         a1.style.backgroundColor = '#ffffff;'
-        a2.style.backgroundImage = 'url("images/tracker-icon.png")';
+        a2.style.backgroundImage = 'url("Images/tracker-icon.png")';
         a2.style.height = '200px';
         a2.style.verticalAlign = 'middle';
         con3.style.display = 'none';
